@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "../../Container.styles";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import CitySelect from "./CitySelect/CitySelect";
 
 // Header component
 // 페이지 상단에서 로고와 네비게이션 역할을 담당하는 Header 컴포넌트
@@ -18,8 +19,9 @@ const Header = () => {
                 </Link>
 
                 {/* Application title(애플리케이션 제목) */}
-                <h2>Weather APP</h2>
+                <h2>Weather</h2>
             </Logo>
+            <CitySelect />
         </HeaderWrapper>
     );
 };
